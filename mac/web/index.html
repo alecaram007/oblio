@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Oblio · il cassetto della memoria</title>
+<meta name="description" content="Un archivio di file che dimentica come un essere umano.">
+<link rel="icon" href="icona.svg" type="image/svg+xml">
+<link rel="stylesheet" href="stile.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="salta" href="#cassetto">Vai al cassetto dei ricordi</a>
+
+<header class="testata">
+  <div class="testata-titolo">
+    <h1><span class="logo" aria-hidden="true"></span>Oblio</h1>
+    <p class="motto">Il file system che dimentica come un essere umano.</p>
+  </div>
+  <p class="archivio" id="archivio" title="Cartella dell'archivio"></p>
+</header>
+
+<main id="principale">
+  <section class="pannello tempo" aria-labelledby="titolo-tempo">
+    <div class="tempo-oggi">
+      <h2 id="titolo-tempo" class="etichetta">Oggi è il</h2>
+      <p class="data-oggi" id="data-oggi">…</p>
+      <p class="nota" id="nota-tempo"></p>
+    </div>
+
+    <div class="tempo-comandi">
+      <form id="modulo-tempo" class="riga-slider">
+        <label for="giorni">Fai passare <output id="giorni-uscita" for="giorni">90 giorni</output></label>
+        <div class="slider-e-pulsante">
+          <input type="range" id="giorni" name="giorni" min="1" max="730" step="1" value="90" aria-describedby="nota-slider">
+          <button type="submit" class="pulsante primario">Fai passare</button>
+        </div>
+        <p class="nota" id="nota-slider">Il tempo è simulato: nessuna data dei tuoi file cambia davvero.</p>
+      </form>
+      <div class="scorciatoie" role="group" aria-label="Scorciatoie per il tempo">
+        <button type="button" class="pulsante" data-giorni="7">+1 settimana</button>
+        <button type="button" class="pulsante" data-giorni="30">+1 mese</button>
+        <button type="button" class="pulsante" data-giorni="90">+3 mesi</button>
+        <button type="button" class="pulsante" data-giorni="365">+1 anno</button>
+        <button type="button" class="pulsante tenue" id="torna-oggi">Torna a oggi</button>
+      </div>
+    </div>
+
+    <fieldset class="velocita">
+      <legend class="etichetta">Velocità dell'oblio</legend>
+      <div class="segmenti" id="segmenti-velocita">
+        <label><input type="radio" name="velocita" value="elefante"><span>elefante</span></label>
+        <label><input type="radio" name="velocita" value="normale"><span>normale</span></label>
+        <label><input type="radio" name="velocita" value="pesce-rosso"><span>pesce rosso</span></label>
+      </div>
+      <p class="nota" id="nota-velocita"></p>
+    </fieldset>
+  </section>
+
+  <section class="pannello riepilogo" aria-labelledby="titolo-riepilogo">
+    <h2 id="titolo-riepilogo" class="etichetta">Cosa ricorda</h2>
+    <div class="barra-stati" id="barra-stati" role="img" aria-label=""></div>
+    <ul class="legenda" id="legenda"></ul>
+    <p class="nota" id="spazio"></p>
+  </section>
+
+  <section class="pannello domani" aria-labelledby="titolo-domani">
+    <h2 id="titolo-domani" class="etichetta">Nei prossimi 30 giorni</h2>
+    <ul class="lista-domani" id="lista-domani"></ul>
+  </section>
+
+  <section class="strumenti" aria-label="Cerca e aggiungi">
+    <form id="modulo-cerca" class="cerca" role="search">
+      <label for="campo-cerca" class="visivamente-nascosto">Cerca nei ricordi, anche nelle tracce</label>
+      <input type="search" id="campo-cerca" placeholder="Cerca anche nelle tracce… (es. mare)" autocomplete="off">
+      <button type="submit" class="pulsante">Cerca</button>
+      <button type="button" class="pulsante tenue" id="annulla-cerca" hidden>Mostra tutto</button>
+    </form>
+    <p class="nota" id="esito-cerca" aria-live="polite"></p>
+
+    <div class="deposito" id="deposito">
+      <input type="file" id="scegli-file" multiple class="visivamente-nascosto" tabindex="-1">
+      <p><strong>Trascina qui dei file</strong> per affidarli all'oblio,
+        oppure <label for="scegli-file" class="collegamento" tabindex="0" id="etichetta-scegli">sceglili dal Mac</label>.</p>
+      <p class="nota">Vengono copiati nell'archivio, cifrati a strati. Fatture, contratti e simili vengono fissati da soli.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="titolo-cassetto" class="sezione-cassetto">
+    <h2 id="titolo-cassetto" class="titolo-sezione">Il cassetto</h2>
+    <div id="vuoto" class="vuoto" hidden></div>
+    <ul class="cassetto" id="cassetto" tabindex="-1"></ul>
+  </section>
+
+  <section class="pannello diario" aria-labelledby="titolo-diario">
+    <h2 id="titolo-diario" class="etichetta">Diario di Oblio</h2>
+    <ol class="righe-diario" id="diario" aria-live="polite" aria-relevant="additions"></ol>
+  </section>
+</main>
+
+<footer class="piede">
+  <p>Oblio per Mac · tutto resta su questo computer · vitalità R = e<sup>−t/S</sup> (curva dell'oblio di Ebbinghaus)</p>
+</footer>
+
+<dialog id="dialogo-apri" class="dialogo" aria-labelledby="titolo-apri">
+  <form method="dialog" class="dialogo-corpo">
+    <h2 id="titolo-apri">Ricordo</h2>
+    <p class="nota" id="fonte-apri"></p>
+    <div class="ricordo" id="contenuto-apri"></div>
+    <p class="nota percorso" id="file-apri"></p>
+    <div class="azioni-dialogo">
+      <a class="pulsante" id="link-apri" target="_blank" rel="noopener">Apri in una nuova scheda</a>
+      <button class="pulsante primario" value="chiudi">Chiudi</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="dialogo-dimentica" class="dialogo" aria-labelledby="titolo-dimentica">
+  <form method="dialog" class="dialogo-corpo">
+    <h2 id="titolo-dimentica">Dimenticare per sempre?</h2>
+    <p id="testo-dimentica"></p>
+    <p class="nota">Le chiavi vengono distrutte e la traccia cancellata: non c'è ritorno. Le copie già estratte in «ricordi» restano tue.</p>
+    <div class="azioni-dialogo">
+      <button class="pulsante" value="no" autofocus>Annulla</button>
+      <button class="pulsante pericolo" value="si">Dimentica per sempre</button>
+    </div>
+  </form>
+</dialog>
+
+<div class="avviso" id="avviso" role="status" aria-live="polite"></div>
+</body>
+</html>

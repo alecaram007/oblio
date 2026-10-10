@@ -1,0 +1,12 @@
+# Gli archivi di Oblio vanno conservati byte per byte: stato.json e i ricordi
+# di testo sono scritti da PowerShell con CRLF e BOM, gli strati sono cifrati.
+demo/archivio/** -text
+*.bin binary
+*.jpg binary
+*.png binary
+*.pdf binary
+*.docx binary
+*.odt binary
+
+# I lanciatori di Windows restano con gli a capo di Windows
+*.cmd -text

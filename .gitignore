@@ -1,0 +1,26 @@
+# File del sistema, degli editor e degli strumenti
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*~
+node_modules/
+.claude/
+
+# Eseguibili e librerie compilati: non vanno nel repository
+*.exe
+*.dll
+*.pdb
+
+# Demo Windows: si tiene solo l'archivio d'esempio (demo/archivio, che i test
+# della versione Mac usano per verificare la compatibilità) e il marcatore
+# .demo-oblio, che permette a demo.cmd di ricrearla.
+/demo/file-di-prova/
+
+# Demo Mac: si ricrea con "npm run demo" (avvia.command la prepara da sola)
+/mac/demo/
+
+# Archivi creati con "oblio crea" nella cartella del progetto
+archivio-oblio/

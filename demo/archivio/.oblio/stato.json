@@ -1,0 +1,280 @@
+{
+    "versione":  1,
+    "creato":  "2026-09-30T22:21:22.1110559Z",
+    "offsetGiorni":  515,
+    "velocita":  "normale",
+    "dimenticatiPerSempre":  0,
+    "voci":  [
+                 {
+                     "id":  "ea033592c6",
+                     "nome":  "appunti-trasloco.txt",
+                     "tipo":  "testo",
+                     "descrizione":  "Testo di 72 parole, 7 frasi; parla di: scatoloni, armadio, attivarlo · 20 set 2026",
+                     "byteOriginali":  447,
+                     "larghezza":  0,
+                     "altezza":  0,
+                     "aggiunto":  "2026-09-30T22:21:22.7161467Z",
+                     "ultimoAccesso":  "2026-09-30T22:21:22.7161467Z",
+                     "stabilita":  180,
+                     "accessi":  0,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "essenza",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "1 frase + parole chiave",
+                                        "byte":  147,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "riassunto",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "3 frasi su 7",
+                                        "byte":  215,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2028-02-27T22:21:25.4100720Z"
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "72 parole",
+                                        "byte":  447,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2027-02-27T22:21:24.7509418Z"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "f4a7b16b2b",
+                     "nome":  "backup-vecchio.bin",
+                     "tipo":  "binario",
+                     "descrizione":  "Dati binari di 1,5 MB · impronta b69427aab97b… · 4 mag 2023",
+                     "byteOriginali":  1572864,
+                     "larghezza":  0,
+                     "altezza":  0,
+                     "aggiunto":  "2026-09-30T22:21:22.9117388Z",
+                     "ultimoAccesso":  "2028-02-27T22:21:26.0797131Z",
+                     "stabilita":  180,
+                     "accessi":  1,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "1,5 MB",
+                                        "byte":  1572864,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2028-02-27T22:21:25.4100720Z"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "ab04c93029",
+                     "nome":  "bosco.jpg",
+                     "tipo":  "immagine",
+                     "descrizione":  "Immagine orizzontale 2400×1600, dai toni medi; colori: verde · 2 set 2026",
+                     "byteOriginali":  172897,
+                     "larghezza":  2400,
+                     "altezza":  1600,
+                     "aggiunto":  "2026-09-30T22:21:23.3626831Z",
+                     "ultimoAccesso":  "2028-02-27T22:21:25.6790839Z",
+                     "stabilita":  450,
+                     "accessi":  1,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "miniatura",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "64×43 px",
+                                        "byte":  1122,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "media",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "480×320 px",
+                                        "byte":  12762,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2028-02-27T22:21:25.4100720Z"
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "2400×1600 px",
+                                        "byte":  172897,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2027-02-27T22:21:24.7509418Z"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "cc6207884c",
+                     "nome":  "diario-estate.txt",
+                     "tipo":  "testo",
+                     "descrizione":  "Testo di 174 parole, 12 frasi; parla di: mare, nonna, sera · 12 ago 2026",
+                     "byteOriginali":  964,
+                     "larghezza":  0,
+                     "altezza":  0,
+                     "aggiunto":  "2026-09-30T22:21:23.4248734Z",
+                     "ultimoAccesso":  "2027-02-27T22:21:25.3593400Z",
+                     "stabilita":  450,
+                     "accessi":  1,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "essenza",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "1 frase + parole chiave",
+                                        "byte":  150,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "riassunto",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "4 frasi su 12",
+                                        "byte":  346,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "174 parole",
+                                        "byte":  964,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2027-02-27T22:21:24.7509418Z"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "b9c37cbf26",
+                     "nome":  "fattura-luce-settembre.txt",
+                     "tipo":  "testo",
+                     "descrizione":  "Testo di 26 parole, 6 frasi; parla di: consumo, elettrica, energia · 1 ott 2026",
+                     "byteOriginali":  152,
+                     "larghezza":  0,
+                     "altezza":  0,
+                     "aggiunto":  "2026-09-30T22:21:23.4672368Z",
+                     "ultimoAccesso":  "2026-09-30T22:21:23.4672368Z",
+                     "stabilita":  180,
+                     "accessi":  0,
+                     "fissato":  true,
+                     "motivoFissato":  "valore legale (nome)",
+                     "strati":  [
+                                    {
+                                        "nome":  "essenza",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "1 frase + parole chiave",
+                                        "byte":  131,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "riassunto",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "2 frasi su 6",
+                                        "byte":  88,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "26 parole",
+                                        "byte":  152,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "352bcd332d",
+                     "nome":  "mare.jpg",
+                     "tipo":  "immagine",
+                     "descrizione":  "Immagine orizzontale 2400×1600, luminosa; colori: azzurro, beige · 12 ago 2026",
+                     "byteOriginali":  308173,
+                     "larghezza":  2400,
+                     "altezza":  1600,
+                     "aggiunto":  "2026-09-30T22:21:23.8458580Z",
+                     "ultimoAccesso":  "2027-02-27T22:21:24.9696885Z",
+                     "stabilita":  450,
+                     "accessi":  1,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "miniatura",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "64×43 px",
+                                        "byte":  1180,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "media",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "480×320 px",
+                                        "byte":  19613,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "2400×1600 px",
+                                        "byte":  308173,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2027-02-27T22:21:24.7509418Z"
+                                    }
+                                ]
+                 },
+                 {
+                     "id":  "16d667a3a5",
+                     "nome":  "tramonto.png",
+                     "tipo":  "immagine",
+                     "descrizione":  "Immagine orizzontale 2400×1600, dai toni medi; colori: nero, arancione, rosso · 13 ago 2026",
+                     "byteOriginali":  47104,
+                     "larghezza":  2400,
+                     "altezza":  1600,
+                     "aggiunto":  "2026-09-30T22:21:24.2291866Z",
+                     "ultimoAccesso":  "2026-12-29T22:21:24.6531996Z",
+                     "stabilita":  450,
+                     "accessi":  1,
+                     "fissato":  false,
+                     "motivoFissato":  "",
+                     "strati":  [
+                                    {
+                                        "nome":  "miniatura",
+                                        "soglia":  0.05,
+                                        "dettaglio":  "64×43 px",
+                                        "byte":  1062,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "media",
+                                        "soglia":  0.2,
+                                        "dettaglio":  "480×320 px",
+                                        "byte":  11112,
+                                        "vivo":  true,
+                                        "dimenticatoIl":  null
+                                    },
+                                    {
+                                        "nome":  "originale",
+                                        "soglia":  0.5,
+                                        "dettaglio":  "2400×1600 px",
+                                        "byte":  47104,
+                                        "vivo":  false,
+                                        "dimenticatoIl":  "2028-02-27T22:21:25.4100720Z"
+                                    }
+                                ]
+                 }
+             ]
+}

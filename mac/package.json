@@ -1,0 +1,20 @@
+{
+  "name": "oblio-mac",
+  "version": "1.0.0",
+  "description": "Oblio per Mac: l'archivio di file che dimentica come un essere umano. Node puro, nessuna dipendenza.",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "bin": {
+    "oblio": "bin/oblio.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "demo": "node bin/demo.mjs --veloce",
+    "oblio": "node bin/oblio.mjs"
+  }
+}

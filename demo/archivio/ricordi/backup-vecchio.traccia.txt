@@ -1,0 +1,7 @@
+﻿TRACCIA DI UN FILE DIMENTICATO
+
+Nome:        backup-vecchio.bin
+Descrizione: Dati binari di 1,5 MB · impronta b69427aab97b… · 4 mag 2023
+Affidato a Oblio il 1 ott 2026
+
+Di questo file resta solo la traccia: il contenuto non esiste più da nessuna parte.
